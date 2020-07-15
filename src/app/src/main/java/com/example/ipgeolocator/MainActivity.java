@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 IPGeoLocation ipGeoLocation = ApiUtil.getDetailsFromJSON(result);
 
                 Toast.makeText(MainActivity.this, "" + ipGeoLocation.getCountry(), Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Something wrong", Toast.LENGTH_SHORT).show();
             }
         }
 
